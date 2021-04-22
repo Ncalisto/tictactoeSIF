@@ -1,0 +1,27 @@
+.Footer {
+  position: absolute;
+  left: 35%;
+  right: 35%;
+  justify-content: center;
+  align-items: center;
+  bottom: 6vh;
+  text-align: center;
+}
+#text-footer {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.8em;
+}
+
+img {
+  position: absolute;
+  left: 3vw;
+  bottom: 3vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: #c386e3;
+}

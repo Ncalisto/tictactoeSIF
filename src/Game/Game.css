@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+
+
+:root{
+  --body-bg:#f6f6f6;
+  --h1-color:#17223b;
+  --Game__menu-bg:#c7ffd8d0;
+  --Game__menu-btt-bg: #f6f6f6;
+  --Game__menu-btt-tx: #000;
+  --Game__menu-btt-hbg:#98ded9;
+  --p-color:#161d6f;
+  --Game__board-btt: #f6f6f6;
+  --Game__board-btt-bg:#161d6f;
+  --Game__board-btt-tx:#c7ffd8;
+
+}
+
+.dark-mode:root{
+  --body-bg:#1b262c;
+  --h1-color:#e7e6e1;
+  --Game__menu-bg:#0f4c75d3;;
+  --Game__menu-btt-bg: #bbe1fa;
+  --Game__menu-btt-tx: #000;
+  --Game__menu-btt-hbg:#3282b8;
+  --p-color:#bbe1fa;
+  --Game__board-btt: #1b262c;
+  --Game__board-btt-bg:#bbe1fa;
+  --Game__board-btt-tx:#0f4c75;
+
+}
+
+body{
+background: var(--body-bg);
+}
+
+.box{
+  position: relative;
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Game{
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.Game__board {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.Game__board button {
+  border: 2px solid var(--Game__board-btt);
+  font-size: 4rem;
+  line-height: 0;
+  background: var(--Game__board-btt-bg);
+  border-radius: 8px;
+  color: var(--Game__board-btt-tx);
+}
+
+.Game__board button:active{
+  transform: translateY(2px);
+}
+
+.Game__menu {
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: var(--Game__menu-bg);
+  border-radius: 10px;
+  padding: 15px;
+  width: 120px;
+  height: 120px;
+
+}
+
+.Game__menu button{
+  font-family: "Poppins", sans-serif;
+  background: var(--Game__menu-btt-bg);
+  border-radius: 4px;
+  width: 100px;
+  height: 22px;
+  border:none;
+  transition-duration: 0.4s;
+  font-size: 1rem;
+  color:var(--Game__menu-btt-tx);
+  cursor: pointer;
+  text-align: center;
+
+}
+
+.Game__menu button:hover{
+  background-color:var(--Game__menu-btt-hbg);
+}
+
+
+p{
+  color: var(--p-color);
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+}
